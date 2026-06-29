@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XBolusAPP | Download</title>
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #111827;
+      --card: rgba(255, 255, 255, 0.08);
+      --border: rgba(255, 255, 255, 0.12);
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --primary: #4f8cff;
+      --primary-hover: #3c77eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 16px 36px;
+    }
+
+    .topbar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+      min-height: 52px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .lang-switch button {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .lang-switch button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(16px);
+    }
+
+    .title {
+      margin: 0 0 12px;
+      font-size: 34px;
+      line-height: 1.1;
+    }
+
+    .desc {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.15s ease;
+      margin-bottom: 18px;
+    }
+
+    .btn:hover {
+      background: var(--primary-hover);
+    }
+
+    .section {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .footer {
+      margin-top: 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 520px) {
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .brand {
+        padding-right: 90px;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const CONFIG = {
+      appName: "XBolus",
+      version: "V2.2",
+      updated: "2026-06-25",
+      fileName: "XBolus2.1.apk",
+      apkLink: "YOUR_APK_DOWNLOAD_LINK",
+      currentLang: "en",
+      texts: {
+        en: {
+          btnText: "中文",
+          brandSub: "Official Download Page",
+          title: "Download the latest version",
+          desc: "Please download the latest version of XBolusAPP from this page.",
+          versionLabel: "Version:",
+          updatedLabel: "Updated:",
+          download: "Download APK",
+          changesTitle: "What's New",
+          changes: [
+            "Improved stability",
+            "Fixed known issues",
+            "Better user experience"
+          ],
+          installTitle: "Installation Guide",
+          install: [
+            'Download the APK file, then tap it to install.',
+            'If prompted with "Unknown sources", allow installation.'
+          ],
+          footer: "© 2026 XBolusAPP"
+        },
+        zh: {
+          btnText: "English",
+          brandSub: "官方下载页",
+          title: "下载最新版本",
+          desc: "请通过本页面下载 XBolusAPP 最新版本。",
+          versionLabel: "版本：",
+          updatedLabel: "更新：",
+          download: "下载 APK",
+          changesTitle: "更新内容",
+          changes: [
+            "提升稳定性",
+            "修复已知问题",
+            "优化使用体验"
+          ],
+          installTitle: "安装说明",
+          install: [
+            "下载 APK 后，点击安装",
+            "如提示“未知来源”，请允许安装"
+          ],
+          footer: "© 2026 XBolusAPP"
+        }
+      }
+    };
+  </script>
+
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <h1 id="appName"></h1>
+        <p id="brandSub"></p>
+      </div>
+
+      <div class="lang-switch">
+        <button id="langBtn" onclick="toggleLang()">中文</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="title" id="title"></h2>
+      <p class="desc" id="desc"></p>
+
+      <div class="meta">
+        <div class="chip" id="versionChip"></div>
+        <div class="chip" id="dateChip"></div>
+        <div class="chip">Android</div>
+      </div>
+
+      <a class="btn" id="downloadBtn" href="#" target="_blank" rel="noopener noreferrer"></a>
+
+      <div class="section">
+        <h2 id="changesTitle"></h2>
+        <ul id="changesList"></ul>
+      </div>
+
+      <div class="section">
+        <h2 id="installTitle"></h2>
+        <ul id="installList"></ul>
+      </div>
+    </div>
+
+    <div class="footer" id="footer"></div>
+  </div>
+
+  <script>
+    function renderPage() {
+      const lang = CONFIG.currentLang;
+      const data = CONFIG.texts[lang];
+
+      document.getElementById("appName").innerText = CONFIG.appName;
+      document.getElementById("brandSub").innerText = data.brandSub;
+      document.getElementById("title").innerText = data.title;
+      document.getElementById("desc").innerText = data.desc;
+      document.getElementById("versionChip").innerHTML = `<strong>${data.versionLabel}</strong> ${CONFIG.version}`;
+      document.getElementById("dateChip").innerHTML = `<strong>${data.updatedLabel}</strong> ${CONFIG.updated}`;
+      document.getElementById("downloadBtn").innerText = data.download;
+      document.getElementById("downloadBtn").href = CONFIG.apkLink;
+      document.getElementById("changesTitle").innerText = data.changesTitle;
+      document.getElementById("installTitle").innerText = data.installTitle;
+      document.getElementById("footer").innerText = data.footer;
+      document.getElementById("langBtn").innerText = data.btnText;
+      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+
+      const changesList = document.getElementById("changesList");
+      changesList.innerHTML = "";
+      data.changes.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        changesList.appendChild(li);
+      });
+
+      const installList = document.getElementById("installList");
+      installList.innerHTML = "";
+      data.install.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        installList.appendChild(li);
+      });
+    }
+
+    function toggleLang() {
+      CONFIG.currentLang = CONFIG.currentLang === "en" ? "zh" : "en";
+      renderPage();
+    }
+
+    renderPage();
+  </script>
+</body>
+</html>
